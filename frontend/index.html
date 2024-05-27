@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restaurant Selection</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #selection-screen {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        #selection-screen select,
+        #selection-screen button {
+            width: 20%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        #selection-screen button {
+            background-color: #0d6efd;
+            color: white;
+            cursor: pointer;
+        }
+
+        #selection-screen button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+            opacity: 0.45;
+            color: #ddd;
+        }
+
+        #selection-screen button:hover {
+            background-color: #0b5ed7;
+        }
+
+        #selection-screen button:active {
+            background-color: #0a58ca;
+        }
+
+        #unavailable-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .item-card {
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 20px;
+            width: calc(50% - 40px);
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .divider {
+            width: 100%;
+            height: 2px;
+            background: #000;
+            margin: 20px 0;
+        }
+
+        #unavailable-items div {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 10px;
+            width: calc(30% - 40px);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        #unavailable-items div:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        #unavailable-items h3 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        #unavailable-items p {
+            color: #666;
+            font-size: 18px;
+        }
+
+        #filter {
+            width: 70%;
+            /* max-width: 500px; */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            transform: translate(15%);
+        }
+
+        #filter:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        h2 {
+            transform: translate(15%);
+            width: 70%;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="selection-screen">
+        <select id="brand-dropdown">
+            <option value="">Select a brand</option>
+            <!-- Brand options will be populated here -->
+        </select>
+        <select id="location-dropdown">
+            <option value="">Select a location</option>
+            <!-- Location options will be populated here -->
+        </select>
+        <button id="clear-button">Clear Selections</button>
+        <button id="submit-button">Submit</button>
+    </div>
+    <div class="divider"></div>
+    <!-- header to display "unavailable items" -->
+    <h2 id="items">Unavailable Items</h2>
+    <!-- add a text box for filtering item by name or reason -->
+    <input type="text" id="filter" placeholder="Filter by item name or reason">
+    <div id="unavailable-items">
+        <!-- Unavailable items will be displayed here -->
+        <!-- <div>
+            <h3>Item Name</h3>
+            <p>unavailable reason</p>
+        </div> -->
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
