@@ -28,6 +28,7 @@ The backend uses the following dependencies:
  - express
  - cors
  - pg
+
 The frontend uses the following dependencies:
  - live-server
 
