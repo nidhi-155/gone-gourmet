@@ -1,0 +1,94 @@
+
+
+
+
+
+create a nodejs server
+add comments to explain the code
+how to run this server
+
+add 3 apis. first api will return a list of restaurant brands based on location input if it is passed or else return all restaurant brands. second api output a list of locations if brand is input, else it will return all list of locations. third api will input restaurant brand and location and return list if unavailable items and its details.
+add comments to explain the code
+
+how to return unique restaurant values
+how to return distinct location values
+
+add 3 apis. first api will return a distinct list of restaurant brands based on location input if it is passed or else return all unique restaurant brands. second api output a list of distinct locations if brand is input, else it will return all list of unique locations. third api will input restaurant brand and location and return list of unavailable items and its details. add comments to explain the code.
+
+
+
+
+
+<!-- create a screen with 2 multi-select dropdowns to input restaurant brand and location -->
+<!-- the dropdown values are loaded from apis outputs -->
+<!-- if value for either one is selected, the other ones value will be updated based on the first ones input -->
+<!-- after values in both are selected, the submit button will be enabled -->
+<!-- after submit button is clicked, an api is called and selected brands and locations are passed, and unavailable-item-list is received -->
+<!-- the unavailable-items names and their reasons are displayed in card below the dropdowns and submit button -->
+
+create html and javascript
+move the jaavascript to separate file, and add comments to explain the code
+
+
+list ways to run html as localhost
+how to run html as localhost using live-server
+live-server is not recognized after installing
+
+@workspace /fix  cors is blocking main.js to call apis defined in server.js
+
+update html and javascript to populate restaurant brand and location multi-select dropdowns with respective api outputs when document is ready. also change the dropdown values when any one of them is selected, the other will update the values after calling its api with the selected values. example if some locations are selected, the brand will call api with the selected location values, and update its own dropdown values. similarly if brands are selected then location will update itself by sending selected brand values to the api
+
+add html & js code to add a clear button to clear the selected brands and locations
+
+write in main..js and index.html to enable the clear button when some brand or location is selected, and to disable clear button when  brand and location are not selected
+
+@workspace /fix  brandids.foreach is not a function
+
+@workspace /fix  dorpdowns are not multiselect
+
+@workspace /fix  dorpdowns should be multiselect but allows only 1 value
+
+@workspace /fix  dorpdowns should be multiselect but it is single select
+
+@workspace /fix  api should return locations for all brands if multiple brands are entered in query
+
+@workspace /fix  update brands api to be similar to locations api
+
+@workspace /fix  only allow location to update if brand is not selected, or brand to update of location is not selected
+
+style the screen and display the 2 dropdowsns and 2 buttons on top. and cards with unavailable items on bottom of the screen. there will be a divider in the middlw.
+
+style the dropdowns, buttons and cards to look attractive
+
+<!-- add a text box for filtering item by name or reason -->
+style the filter text box to look attractive and complement the page
+@workspace /fix  move the filter box to middle of screen
+
+@workspace /fix  add an attractive style to the screen to display the dropdowns and buttons on top, then a divider, then a text box to filter items by name or reason and then cards to display the @workspace /fix  move the filter box to middle of screen unavailable items.
+
+add a check in submit button click to add a border style to dropdows if a value is not selected. and call api only if both dropdowns has some value selected
+
+add functionality to filter the cards displayed based on unavailable-item name or reason'
+
+/explain
+
+how to clear a text in textbox from jquery
+
+@workspace /fix  after submit button click, the dropdown values are not resetting
+
+change title to include selected locations and brand after submit button is clicked
+
+which DBs can be used with nodejs
+
+how to setup and use postgresql with this nodejs server
+how to create db table and add data in postgresql
+
+
+how to get the restaurants details from db
+
+
+@workspace create a readme file to explain about the project
+create a batch script to run npm start for both backend and frontend
+create a batch script to install dependencies for both backend and frontend
+/fix the batch script to install dependencies for both backend and frontend so that both commands run simulatneously
+add a section in readme about the bat files
