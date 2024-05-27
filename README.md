@@ -40,4 +40,4 @@ There are two batch scripts included in this project to help with setting up and
 
 - `start-gone-gourmet.bat`: This script starts both the backend and frontend. To run it, navigate to the project directory in the command prompt and type `start-gone-gourmet.bat`.
 
-Please note that these scripts assume that you have Node.js and npm installed and that your `package.json` files are located in the `backend` and `frontend` directories.
+Please note that these scripts assume that you have Node.js and npm installed and that your `package.json` files are located in the `backend` and `frontend` directories. The project also requires postgresql DB and assumes that the appropriate table is available to fetch data.
